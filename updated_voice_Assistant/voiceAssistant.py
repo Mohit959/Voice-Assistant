@@ -278,11 +278,11 @@ def sendMail():
     # start TLS for security
     s.starttls()
     # Authentication
-    s.login("hs10012001@gmail.com", "Hemant@1001")
+    s.login("", "")
     # message to be sent
     message = "How are you?"
     # sending the mail
-    s.sendmail("hs10012001@gmail.com", "hemant10jan@gmail.com", message)
+    s.sendmail("", "", message)
     # terminating the session
     s.quit()
 
