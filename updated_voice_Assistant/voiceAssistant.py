@@ -14,6 +14,7 @@ import re
 import smtplib as smtp
 import pywhatkit as kit
 import numberguess
+import password
 
 # import yfinance
 
@@ -156,6 +157,10 @@ def reply(text):
 
     elif 'game' in  text:
         numberguess.game();
+    elif "generate password" in text:
+        generatepassword.function()
+    elif "password manager" in text:
+        password.passwordmanager()
 
     else:
         talk("I am not getting What you are speaking?")
@@ -294,8 +299,9 @@ execute()
 # call            
 # change voice    done
 # games           mohit done
-# alarm           
+# alarm 
 
+#password manager & generatorn
 # numberguess.game()
 
 
